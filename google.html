@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="1.css">
+<link rel="stylesheet" type="text/css" href="button1.css">
+<style>
+body {
+  background-image:"google4.jpg";
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+a{
+text-decoration:none;
+}
+
+</style>
+<script>
+	function myval()
+	{
+		var uname=document.gform.email.value;
+		var pass=document.gform.pwd.value;
+		if(uname=="")
+		{
+			window.alert("Please enter Email or Phone Number");
+			document.gform.email.focus();
+			return false;
+		
+		}
+		if(pass=="")
+		{
+			window.alert("Please enter Your Password");
+			document.gform.pwd.focus();
+			return false;
+		
+		}
+		window.alert("Log in Sucessfull");
+		return true;
+	}
+
+</script>
+
+</head>
+
+
+
+<body background="google4.jpg">
+
+<table align="center" width="40%" height="90%"  cellpadding="10" cellspacing="0" bgcolor="lightyellow" class="btnn" >
+<th>
+	<table align="center" width="5%" height="10%" border="0px" cellpadding="5" cellspacing="0">
+	
+		<th align="top" colspan="6" >
+		 <td><h1 style="color:DodgerBlue;font-family:comic sans ms">G</h1></td>
+		 <td><h1 style="color:red;font-family:comic sans ms">o</h1> </td>
+		 <td><h1 style="color:yellow;font-family:comic sans ms">o</h1></td>
+		 <td><h1 style="color:DodgerBlue;font-family:comic sans ms">g</h1></td>
+		 <td><h1 style="color:MediumSeaGreen;font-family:comic sans ms">l</h1></td>
+		 <td><h1 style="color:red;font-family:comic sans ms">e</h1></td>
+		
+		</th>
+		
+		
+		 
+	
+		
+	</table>
+	
+
+
+		<table align="center" width="40%" height="70%" border="0px" cellpadding="20" cellspacing="0">
+		<th><h3 style="color:DodgerBlue;font-family:comic sans ms">Sign In</h3>
+		
+ 
+	<form action="" onsubmit="return myval()" name="gform">		
+		<label for="fname"><p style="font-family:comic sans ms">With Your Google Account</p></label><br><br><br>
+			<input type="text" id="fname" name="email" placeholder="Email or phone"><br><br>
+		<label for="lname"><p style="font-family:comic sans ms">Password </p></label><br><br>
+			<input type="password" id="lname" name="pwd" placeholder="Password"><br><br>
+  <input type="submit" class="btn1" placeholder="Log in">
+</form>
+		</th>
+		
+		</table>
+		</th>
+		</table>
+</body>
+
+
+</html>
